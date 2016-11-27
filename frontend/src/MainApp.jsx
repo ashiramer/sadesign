@@ -1,5 +1,7 @@
 import React from 'react';
-import LeftSideBar from './LeftSideBar.jsx';
+import LeftSideBar from './sidebar/LeftSideBar.jsx';
+
+require('./main.css');
 
 class MainApp extends React.Component {
 
@@ -16,7 +18,7 @@ class MainApp extends React.Component {
 
   render() {
     return (
-      <div class="main-style">
+      <div className="main-style">
       	<LeftSideBar/>
       </div>
     );

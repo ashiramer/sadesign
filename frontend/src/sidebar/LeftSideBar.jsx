@@ -1,4 +1,5 @@
 import React from 'react';
+require('./sidebar.css');
 
 class LeftSideBar extends React.Component {
 
@@ -9,7 +10,7 @@ class LeftSideBar extends React.Component {
 
   render() {
     return (
-	<div> Sup </div>
+	    <div id="sidebar"> Sup </div>
     );
   }
 

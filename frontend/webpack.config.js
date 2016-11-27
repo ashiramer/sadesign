@@ -18,9 +18,9 @@ var config = {
       loader: 'babel'
     },
     {
-      test: /\/(css$/,
+      test: /\.css/,
       include: APP_DIR,
-      loader: 'style!css'      
+      loader: 'style-loader!css-loader'      
     }]
   }
 };
