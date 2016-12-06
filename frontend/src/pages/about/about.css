@@ -1,0 +1,100 @@
+#portrait {
+  width: 250px;
+  float: left;
+  padding-right: 10px;
+}
+
+#top-stuff {
+  overflow: auto;
+}
+
+#art-text-first {
+  padding-top:30px;
+}
+
+#art-text-second {
+  padding-top:20px;
+}
+
+.about-text {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.about-text-full {
+  padding-right: 273px;
+}
+
+.about-text em {
+  font-size: 30px;
+  font-style: normal;
+  padding-right: 20px;
+}
+
+.about-text-black {
+  color: black;
+}
+
+#exhibit-left {
+  width: 300px;
+}
+
+#exhibit-right {
+  height: 300px;
+  width: 700px;
+}
+
+#bottom-left {
+  float: left;
+}
+
+#bottom-container {
+  padding-top: 10px;
+}
+
+.about-text-white {
+  color: white;
+}
+
+#science-stuff {
+  background-color: white;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.section {
+  padding-left: 300px;
+}
+
+.section-black {
+  background-color: black;
+}
+
+.section-white {
+  background-color: white;
+}
+
+#science-image {
+  width: 1000px;
+}
+
+#exhibit-image {
+  width: 486px;
+}
+
+#exhibit-painting {
+  width: 500px;
+  height: 507px;
+  margin-right:219px;
+}
+
+.right-side {
+  float: right;
+}
+
+#current-text {
+  width: 475px;
+  display: inline-block;
+}

@@ -1,6 +1,12 @@
 import React from 'react';
 require('./sidebar.css');
 
+//const logo = require('./images/logoblack.jpg')
+
+const logo = require("./logoblack.jpg")
+const tabsbio = require("./tabsbio.png")
+const tabseditorial = require("./tabseditorial.png")
+
 class LeftSideBar extends React.Component {
 
   constructor(props) {
@@ -10,7 +16,11 @@ class LeftSideBar extends React.Component {
 
   render() {
     return (
-	    <div id="sidebar"> Sup </div>
+	    <div id="sidebar">
+        <img id="logo" src={logo}/> 
+        <img className="tab-label" src={tabsbio}/>
+        <img className="tab-label" src={tabseditorial}/>
+      </div>
     );
   }
 

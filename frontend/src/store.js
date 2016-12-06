@@ -1,6 +1,16 @@
 import { createStore } from 'redux'
-import theApp from './reducers/theApp.js'
 
-let store = createStore(theApp, {state: "nothing"})
+function transition(state, action) {
+  switch (action.type) {
+    case 'ABOUT':
+      return {pageType: "ABOUT"}
+  }
+}
+
+
+let store = createStore(transition);
+store.dispatch({type: "ABOUT"});
+
+console.log(store.getState());
 
 export default store

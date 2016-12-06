@@ -1,5 +1,8 @@
 import React from 'react';
 import LeftSideBar from './sidebar/LeftSideBar.jsx';
+import AppContainer from './pages/AppContainer.jsx';
+
+import state from './store.js';
 
 require('./main.css');
 
@@ -20,6 +23,7 @@ class MainApp extends React.Component {
     return (
       <div className="main-style">
       	<LeftSideBar/>
+        <AppContainer/>
       </div>
     );
   }

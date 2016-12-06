@@ -2,4 +2,4 @@
 
 
 cd $(dirname $)
-./node_modules/.bin/webpack -d
+./node_modules/.bin/webpack -d --watch

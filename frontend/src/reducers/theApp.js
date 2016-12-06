@@ -1,14 +1,14 @@
-
+import { SWITCH_PAGE, PAGES } from '../actions/pages.js'
 
 const initialState = {
-  nothing: "my state"
-}
-function theApp(state = initialState, action) {
-  if (typeof state == 'undefined') {
-	  return initialState
-  }
-  return state
+  page: PAGES.ABOUT
 }
 
+function page(state = initialState, action) {
+  return { page: action.PAGE_TYPE }
+  
+}
+
+const theApp = combineReducers({page})
 
 export default theApp

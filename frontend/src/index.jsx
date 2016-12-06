@@ -2,15 +2,18 @@ import React from 'react';
 import {render} from 'react-dom';
 import MainApp from './MainApp.jsx';
 import store from './store.js';
+import { Provider } from 'react-redux';
 
 class App extends React.Component {
 
   render () {
+    console.log(store.getState());
     return (
-      <div>
-        <p> Hello React!</p>
-        < MainApp/>
-      </div>
+      <Provider store={store}>
+        <div>
+          < MainApp/>
+        </div>
+      </Provider>
     );
   }
 }
