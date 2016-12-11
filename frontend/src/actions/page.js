@@ -14,5 +14,7 @@ export const PAGES = {
 }
 
 export function changePage(page) {
-  return { type: SWITCH_PAGE, page}
+  let action = { type: SWITCH_PAGE, page: page};
+  console.log(action);
+  return action;
 }

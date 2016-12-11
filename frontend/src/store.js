@@ -1,15 +1,10 @@
 import { createStore } from 'redux'
-
-function transition(state, action) {
-  switch (action.type) {
-    case 'ABOUT':
-      return {pageType: "ABOUT"}
-  }
-}
+import { initialState, theApp } from './reducers/theApp.js'
+import { changePage } from './actions/page.js'
 
 
-let store = createStore(transition);
-store.dispatch({type: "ABOUT"});
+let store = createStore(theApp);
+store.dispatch(changePage("ABOUT"));
 
 console.log(store.getState());
 

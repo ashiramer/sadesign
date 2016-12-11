@@ -1,14 +1,15 @@
-import { SWITCH_PAGE, PAGES } from '../actions/pages.js'
+import { SWITCH_PAGE, PAGES } from '../actions/page.js'
+import { combineReducers } from 'redux'
 
-const initialState = {
+export const initialState = {
   page: PAGES.ABOUT
 }
 
 function page(state = initialState, action) {
-  return { page: action.PAGE_TYPE }
+  console.log(action);
+  return { page: action.page }
   
 }
 
-const theApp = combineReducers({page})
+export const theApp = combineReducers({page})
 
-export default theApp

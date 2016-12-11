@@ -30,15 +30,13 @@ class AppContainer extends React.Component {
 
 }
 
-AppContainer.propTypes = {
-  pageType: PropTypes.string.isRequired
-}
+//AppContainer.propTypes = {
+ // pageType: PropTypes.string.isRequired
+//}
 
 
 function mapStateToProps(state) {
-  console.log(state);
-  let newState = {pageType: state.pageType};
-  console.log(newState);
+  let newState = {pageType: state.page};
   return newState;
 }
 
