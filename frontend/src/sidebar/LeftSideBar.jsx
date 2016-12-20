@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as Actions from '../actions/page.js';
+import { Link } from 'react-router';
 
 
 require('./sidebar.css');
@@ -18,12 +19,8 @@ class SideBarTab extends React.Component {
     super(props);
   }
 
-  getSelected() {
-    console.log(this.props.name);
-  }
-
   render() {
-    return <img className="tab-label" onClick={this.getSelected.bind(this)} src={this.props.src} />
+    return <Link to={this.props.name}><img className="tab-label" src={this.props.src} /></Link>
   }
 }
 
@@ -38,8 +35,8 @@ class LeftSideBar extends React.Component {
     return (
 	    <div id="sidebar">
         <img id="logo" src={logo}/> 
-        <SideBarTab onClick={this.getSelected} src={tabsbio} name="ABOUT"/>
-        <SideBarTab onClick={this.getSelected} src={tabseditorial} name="EDITORIAL"/>
+        <SideBarTab src={tabsbio} name="about"/>
+        <SideBarTab src={tabseditorial} name="editorial"/>
       </div>
     );
   }
@@ -52,5 +49,5 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapDispatchToProps)(LeftSideBar);
+export default LeftSideBar;
 

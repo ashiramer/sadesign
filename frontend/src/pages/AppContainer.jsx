@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import {Route} from 'react-router';
 import About from './about/About.jsx';
 import * as Actions from '../actions/page.js';
 import { bindActionCreators } from 'redux';
@@ -22,28 +23,12 @@ class AppContainer extends React.Component {
 
   render() {
     return (
-      <div id="app-container">
-      	<About/>
-      </div>
+        <div>
+        {this.props.activeRoute}
+        </div>
     );
   }
 
 }
 
-//AppContainer.propTypes = {
- // pageType: PropTypes.string.isRequired
-//}
-
-
-function mapStateToProps(state) {
-  let newState = {pageType: state.page};
-  return newState;
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(Actions, dispatch)
-  };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(AppContainer);
+export default AppContainer;

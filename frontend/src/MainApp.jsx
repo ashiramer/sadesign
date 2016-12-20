@@ -20,9 +20,11 @@ class MainApp extends React.Component {
   }
 
   render() {
+
+
     return (
       <div className="main-style">
-      	<LeftSideBar/>
+        <LeftSideBar/>
         <AppContainer/>
       </div>
     );

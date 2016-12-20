@@ -1,4 +1,5 @@
 import React from 'react';
+import LeftSideBar from '../../sidebar/LeftSideBar.jsx';
 
 const portrait = require('./portrait.jpg');
 const exhibit_left = require('./exhibit_left.jpg');
@@ -15,8 +16,10 @@ class About extends React.Component {
   }
 
   render () {
+    console.log("rendering");
     return (
         <div>
+          <LeftSideBar/>
           <div id="art-section" className="section section-black">
             <div id="top-stuff">
               <img id="portrait" src={portrait}/>          
